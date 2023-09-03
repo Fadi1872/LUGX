@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Hind:wght@300;400;500;600;700&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1, span{
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.1rem;
+}
+.noline{
+    text-decoration: none;
+}
+
+
+.transition-5{
+    transition: 0.25s ease-in-out;
+}
+.hero-img{
+    width: 300px;
+}
+
+.navbar-toggler{
+    width: 20px;
+    height: 20px;
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:active{
+    outline: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+.toggler-icon{
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+}
+.middle-bar {
+    margin-top: 0;
+}
+
+.navbar-toggler .top-bar{
+    margin-top: 0;
+    transform: rotate(135deg);
+}
+.navbar-toggler .middle-bar{
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.navbar-toggler .bottom-bar{
+    margin-top: 0;
+    transform: rotate(-135deg);    
+}
+
+.navbar-toggler.collapsed .top-bar{
+    margin-top: -10px;
+    transform: rotate(0deg);
+}
+.navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+    filter: alpha(opacity=1);
+}
+.navbar-toggler.collapsed .bottom-bar{
+    margin-top: 10px;
+    transform: rotate(0deg);
+}
+
+
+
+.hero{
+    min-height: calc(100vh + 100px);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.back-img{
+    background: url("./../img/hero.jpg") no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+.min-height{
+    min-height: 100vh;
+}
+.nav-scrolled{
+    background-color: #0a6ef4;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
+}
+.red-button{
+    background-color: #ed6467;
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.red-button:hover, .shop:hover{
+    background-color: #d86066;
+    cursor: pointer;
+}
+.input-none{
+    background-color: transparent;
+    outline: none;
+    border: 0;
+}
+.price{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #0a6ef4;
+    color: #fff;
+}
+.discount{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    background-color: #ed6467;
+    font-size: 1.3rem;
+}
+.icon{
+    width: 65px;
+    height: 65px;
+    background-color: #0a6ef4;
+    font-size: 1.3rem;
+}
+.icon:hover{
+    background-color: #1169c9;
+    cursor: pointer;
+}
+.floating-container{
+    transform: translateY(-80%);
+}
+.gray-bg{
+    background-color: #ebefef;
+}
+.red-bg{
+    background-color: #ed6467;
+}
+
+.shop{
+    width: 35px;
+    height: 35px;
+}
+.color-red{
+    color: #ed6467;
+}
+.color-blue{
+    color: #0a6ef4;
+}
+.over-button{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+#most{
+    border-radius: 100px;
+}
+.blue-bg2{
+    background-color: #0a6ef4;
+}
+.w200{
+    width: 400px;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+}
+footer{
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+.sign_in{
+    max-width: 700px;
+    width: 80%;
+    max-height: 900px;
+    height: 80%;
+}
+.transformT{
+    transform: translateX(-10px);
+}
+
+.changing-back{
+    background: no-repeat;
+    background-size: cover;
+    background-position: -200px ;
+    animation: imgCh 20s infinite;
+}
+
+@keyframes imgCh {
+    0%{
+        background-image: url(./../img/GTA5.jpg);
+    }
+    25%{
+        background-image: url(./../img/last.jpg);
+    }
+    50%{
+        background-image: url(./../img/RL.jpg);
+    }
+    75%{
+        background-image: url(./../img/RPG.jpg);
+    }
+    100%{
+        background-image: url(./../img/GTA5.jpg);
+    }
+}
+
+
+
+
+@media screen and (max-width : 991px) {
+    .floating-container{
+        transform: translateY(0);
+    }
+    .blue-bg{
+        background-color: #0a6ef4;
+    }
+    .w200{
+        left: 100%;
+        transform: translate(-100% , -40%);
+    }
+}
+@media screen and (max-width :576px) {
+    .w200{
+        display: none;
+    }
+}
