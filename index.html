@@ -80,10 +80,6 @@
                         </div>
                     </div>
                 </div>
-
-                
-
-
             </div>
         </div>
     </header>
@@ -150,9 +146,9 @@
                                     <p class="h5 mb-0">L OF Legends</p>
                                 </div>
                                 <div class="col-4 d-flex justify-content-center align-items-center rounded-5">
-                                    <div class="shop red-bg d-flex justify-content-center align-items-center rounded-5 transition-5">
-                                        <i class="fa-solid fa-bag-shopping text-white"></i>
-                                    </div>
+                                    <button type="button" class="shop red-bg d-flex justify-content-center align-items-center rounded-5 transition-5 border-0" data-bs-toggle="modal" data-bs-target="#LOL">
+                                        <i class="fa-solid fa-plus text-white"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -171,9 +167,9 @@
                                     <p class="h5 mb-0">Fall Guys</p>
                                 </div>
                                 <div class="col-4 d-flex justify-content-center align-items-center rounded-5">
-                                    <div class="shop red-bg d-flex justify-content-center align-items-center rounded-5 transition-5">
-                                        <i class="fa-solid fa-bag-shopping text-white"></i>
-                                    </div>
+                                    <button type="button" class="border-0 shop red-bg d-flex justify-content-center align-items-center rounded-5 transition-5" data-bs-toggle="modal" data-bs-target="#FG">
+                                        <i class="fa-solid fa-plus text-white"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -192,9 +188,9 @@
                                     <p class="h5 mb-0">Fortnite</p>
                                 </div>
                                 <div class="col-4 d-flex justify-content-center align-items-center rounded-5">
-                                    <div class="shop red-bg d-flex justify-content-center align-items-center rounded-5 transition-5">
-                                        <i class="fa-solid fa-bag-shopping text-white"></i>
-                                    </div>
+                                    <button type="button" class="border-0 shop red-bg d-flex justify-content-center align-items-center rounded-5 transition-5" data-bs-toggle="modal" data-bs-target="#FN">
+                                        <i class="fa-solid fa-plus text-white"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -213,9 +209,9 @@
                                     <p class="h5 mb-0">Minecraft</p>
                                 </div>
                                 <div class="col-4 d-flex justify-content-center align-items-center rounded-5">
-                                    <div class="shop red-bg d-flex justify-content-center align-items-center rounded-5 transition-5">
-                                        <i class="fa-solid fa-bag-shopping text-white"></i>
-                                    </div>
+                                    <button type="button" class="border-0 shop red-bg d-flex justify-content-center align-items-center rounded-5 transition-5" data-bs-toggle="modal" data-bs-target="#M">
+                                        <i class="fa-solid fa-plus text-white"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -228,55 +224,73 @@
             <div class="container">
                 <div class="mb-5">
                     <p class="color-red">Trending</p>
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center mx-3">
                         <h1>Most Played</h1>
                         <button class="red-button rounded-5 transition-5">Shop now</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-2 col-md-4 col-sm-6 position-relative mt-4">
-                        <div class="object-fit-contain rounded-5 bg-white pb-4">
-                            <img src="./assets/img/A.jpg" alt="A" class="rounded-5 w-100">
+                        <div class="object-fit-contain rounded-5 bg-white pb-4 hover-big transition-5 position-relative">
+                            <div class="back-price w-100 pt-3">
+                                <h1 class="color-red text-center">33$</h1>
+                            </div>
+                            <img src="./assets/img/A.jpg" alt="Apex" class="rounded-5 w-100 position-relative transition-5">
                             <p class="text-center mb-0 opacity-50">Game</p>
                             <p class="h5 text-center">Apex</p>
                             <button class="red-button rounded-5 transition-5 over-button">Explore</button>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 position-relative mt-4">
-                        <div class="object-fit-contain rounded-5 bg-white pb-4">
-                            <img src="./assets/img/COD.jpg" alt="Call Of Duty" class="rounded-5 w-100">
+                    <div class="col-lg-2 col-md-4 col-sm-6 position-relative mt-4 ">
+                        <div class="object-fit-contain rounded-5 bg-white pb-4 hover-big transition-5 position-relative">
+                            <div class="back-price w-100 pt-3">
+                                <h1 class="color-red text-center">29$</h1>
+                            </div>
+                            <img src="./assets/img/COD.jpg" alt="Call Of Duty" class="rounded-5 w-100 position-relative  transition-5">
                             <p class="text-center mb-0 opacity-50">Game</p>
                             <p class="h5 text-center">Call Of Duty</p>
                             <button class="red-button rounded-5 transition-5 over-button">Explore</button>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-6 position-relative mt-4">
-                        <div class="object-fit-contain rounded-5 bg-white pb-4">
-                            <img src="./assets/img/GTA5.jpg" alt="GTA 5" class="rounded-5 w-100">
+                        <div class="object-fit-contain rounded-5 bg-white pb-4 hover-big transition-5 position-relative">
+                            <div class="back-price w-100 pt-3">
+                                <h1 class="color-red text-center">22$</h1>
+                            </div>
+                            <img src="./assets/img/GTA5.jpg" alt="GTA 5" class="rounded-5 w-100 position-relative  transition-5">
                             <p class="text-center mb-0 opacity-50">Game</p>
                             <p class="h5 text-center">GTA 5</p>
                             <button class="red-button rounded-5 transition-5 over-button">Explore</button>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-6 position-relative mt-4">
-                        <div class="object-fit-contain rounded-5 bg-white pb-4">
-                            <img src="./assets/img/CS.jpg" alt="Counter Srtike" class="rounded-5 w-100">
+                        <div class="object-fit-contain rounded-5 bg-white pb-4 hover-big transition-5 position-relative">
+                            <div class="back-price w-100 pt-3">
+                                <h1 class="color-red text-center">18$</h1>
+                            </div>
+                            <img src="./assets/img/CS.jpg" alt="Counter Srtike" class="rounded-5 w-100 position-relative  transition-5">
                             <p class="text-center mb-0 opacity-50">Game</p>
                             <p class="h5 text-center">Counter Srtike</p>
                             <button class="red-button rounded-5 transition-5 over-button">Explore</button>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-6 position-relative mt-4">
-                        <div class="object-fit-contain rounded-5 bg-white pb-4">
-                            <img src="./assets/img/RL.jpg" alt="Rocket Leage" class="rounded-5 w-100">
+                        <div class="object-fit-contain rounded-5 bg-white pb-4 hover-big transition-5 position-relative">
+                            <div class="back-price w-100 pt-3">
+                                <h1 class="color-red text-center">36$</h1>
+                            </div>
+                            <img src="./assets/img/RL.jpg" alt="Rocket Leage" class="rounded-5 w-100 position-relative  transition-5">
                             <p class="text-center mb-0 opacity-50">Game</p>
                             <p class="h5 text-center">Rocket Leage</p>
                             <button class="red-button rounded-5 transition-5 over-button">Explore</button>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-6 position-relative mt-4">
-                        <div class="object-fit-contain rounded-5 bg-white pb-4">
-                            <img src="./assets/img/TS4.jpg" alt="The Sims 4" class="rounded-5 w-100">
+                        <div class="object-fit-contain rounded-5 bg-white pb-4 hover-big transition-5 position-relative">
+                            <div class="back-price w-100 pt-3">
+                                <h1 class="color-red text-center">12$</h1>
+                            </div>
+                            <img src="./assets/img/TS4.jpg" alt="The Sims 4" class="rounded-5 w-100 position-relative  transition-5">
                             <p class="text-center mb-0 opacity-50">Game</p>
                             <p class="h5 text-center">The Sims 4</p>
                             <button class="red-button rounded-5 transition-5 over-button">Explore</button>
@@ -350,6 +364,129 @@
     <footer id="contact" class="back-img py-4">
         <p class="text-center text-white mb-0">copyright this website has been made by Fadi Noumih</p>
     </footer>
+
+
+
+
+
+
+    <div class="modal fade modal-lg" id="LOL" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-5 color-red" id="staticBackdropLabel">Treanding</h1>
+                    <button type="button" class="btn-close  btn-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body mb-5">
+                    <div class="row w-100 h-100 m-0">
+                        <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                            <img src="./assets/img/LOL.jpg" class="w-75 rounded-5" alt="...">
+                        </div>
+                        <div class="col-lg-6 d-flex justify-content-center align-items-start flex-column px-5">
+                            <h1>League Of Legends</h1>
+                            <p>
+                                League of Legends, developed by Riot Games, is a wildly popular multiplayer online battle 
+                                arena (MOBA) game. With its ever-expanding roster of over 150 champions, each offering a unique
+                                playstyle and abilities, it's a game that demands both strategic thinking and lightning-fast 
+                                reflexes.
+                            </p>
+                            <button class="red-button rounded-5 transition-5">
+                                DOWNLOAD
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-lg" id="FG" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-5 color-red" id="staticBackdropLabel">Treanding</h1>
+                    <button type="button" class="btn-close  btn-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body mb-5">
+                    <div class="row w-100 h-100 m-0">
+                        <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                            <img src="./assets/img/FG.jpg" class="w-75 rounded-5" alt="...">
+                        </div>
+                        <div class="col-lg-6 d-flex justify-content-center align-items-start flex-column px-5">
+                            <h1>Fall Guys</h1>
+                            <p>
+                                Ultimate Knockout, a whimsical battle royale game by Mediatonic, offers a hilarious 
+                                twist on the genre. Players navigate obstacle courses, tackle zany challenges, and 
+                                compete in mini-games, all while controlling adorable, floppy characters.
+                            </p>
+                            <button class="red-button rounded-5 transition-5">
+                                DOWNLOAD
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-lg" id="FN" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-5 color-red" id="staticBackdropLabel">Treanding</h1>
+                    <button type="button" class="btn-close  btn-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body mb-5">
+                    <div class="row w-100 h-100 m-0">
+                        <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                            <img src="./assets/img/FN.jpg" class="w-75 rounded-5" alt="...">
+                        </div>
+                        <div class="col-lg-6 d-flex justify-content-center align-items-start flex-column px-5">
+                            <h1>Fortnite</h1>
+                            <p>
+                                a wildly popular battle royale game developed by Epic Games, has captured the hearts 
+                                of millions worldwide. With its unique blend of building mechanics, diverse weapons, and vibrant 
+                                visuals, it offers fast-paced action and creativity in one package.
+                            </p>
+                            <button class="red-button rounded-5 transition-5">
+                                DOWNLOAD
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-lg" id="M" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-5 color-red" id="staticBackdropLabel">Treanding</h1>
+                    <button type="button" class="btn-close  btn-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body mb-5">
+                    <div class="row w-100 h-100 m-0">
+                        <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                            <img src="./assets/img/MC.jpg" class="w-75 rounded-5" alt="...">
+                        </div>
+                        <div class="col-lg-6 d-flex justify-content-center align-items-start flex-column px-5">
+                            <h1>Minecraft</h1>
+                            <p>
+                                League of Legends, developed by Riot Games, is a wildly popular multiplayer online battle 
+                                arena (MOBA) game. With its ever-expanding roster of over 150 champions, each offering a unique
+                                playstyle and abilities, it's a game that demands both strategic thinking and lightning-fast 
+                                reflexes.
+                            </p>
+                            <button class="red-button rounded-5 transition-5">
+                                DOWNLOAD
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <script src="./assets/js/app.js"></script>
     <!-- font awsome js  -->

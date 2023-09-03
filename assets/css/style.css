@@ -32,7 +32,7 @@ h1, span{
     transition: 0.5s ease-in-out;
     position: relative;
 }
-.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:active{
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:active, .btn-none, .btn-none:focus, .btn-none:active{
     outline: none !important;
     border: 0 !important;
     box-shadow: none !important;
@@ -192,6 +192,22 @@ footer{
 .transformT{
     transform: translateX(-10px);
 }
+.hover-big{
+    top: 0;
+    cursor: pointer;
+}
+.hover-big:hover img{
+    height: 100%;
+    transform: translateY(50%);
+}
+.back-price{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+
 
 .changing-back{
     background: no-repeat;
@@ -232,9 +248,18 @@ footer{
         left: 100%;
         transform: translate(-100% , -40%);
     }
+    html{
+        font-size: 15px;
+    }
+    #most{
+        border-radius: px;
+    }
 }
 @media screen and (max-width :576px) {
     .w200{
         display: none;
+    }
+    html{
+        font-size: 14px;
     }
 }
