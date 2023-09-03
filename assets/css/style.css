@@ -253,7 +253,7 @@ footer{
         font-size: 15px;
     }
     #most{
-        border-radius: px;
+        border-radius: 50px;
     }
 }
 @media screen and (max-width :576px) {
