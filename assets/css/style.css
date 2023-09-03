@@ -198,8 +198,9 @@ footer{
 }
 .hover-big:hover img{
     height: 100%;
-    transform: translateY(50%);
+    transform: translateY(30%);
 }
+
 .back-price{
     position: absolute;
     top: 0;
@@ -261,5 +262,8 @@ footer{
     }
     html{
         font-size: 14px;
+    }
+    .hover-big:hover img{
+        transform: translateY(14%);
     }
 }
